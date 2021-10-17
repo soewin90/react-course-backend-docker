@@ -1,0 +1,20 @@
+{
+  "name": "course-backend",
+  "version": "1.0.0",
+  "description": "This is backend project for learn-reactJs-production-grade",
+  "author": "gautam@soewin",
+  "license": "ISC",
+  "scripts": {
+    "start": "npm-run-all -p start:api",
+    "prestart:api": "node tools/createMockDb.js",
+    "start:api": "node tools/apiServer.js",
+    "build": "react-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "fetch-mock": "^7.3.1",
+    "json-server": "^0.16.3",
+    "node-fetch": "^2.3.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
